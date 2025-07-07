@@ -7,7 +7,7 @@ A RAG solution for appliances and gadgets serves as a replacement for traditiona
 
 
 ### **Install Python**
-***NOTE:** Remove each "$" from the commands or copy the commands without it; it's only a declaration for using the terminal*
+***NOTE:*** Remove each **"$"** from the commands or copy the commands without it; it's only a declaration for using the terminal
 1) Download python 3.10 from the official website of python
 
 2) Install it and add it to the **System PATH**
@@ -33,6 +33,23 @@ $ conda create --name mini_rag python=3.10  # You can replace 3.10 with your pre
 $ conda activate mini_rag
 # Activate the environment
 ```
+**TIP for GUI lovers *(Alternative)*: You can also create the virtual environment with VS Code Built-in GUI if you want a one-click setup**
+
+- Open the command palette: Ctrl + Shift + P
+
+- Then search for:
+Python: Create Environment
+
+- Choose:
+
+    - venv
+
+    - Your preferred Python version from the list
+
+    - Project location
+
+    - Also check the requirements.txt file to install dependencies automatically.
+
 
 ### (Optional) Setup your command line interface for better readability - *only valid for Linux* -
 ```bash
@@ -50,7 +67,7 @@ $ pip install -r requirements.txt
 ### **Setup the environment variables**
 
 ```bash
-$ cp .env.example .env
+$ cp src/.env.example src/.env
 ```
 *Set your environment variables in the ".env" file. Like "OPENAI_API_KEY" value*
 
